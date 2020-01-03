@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- InstanceBegin template="/Templates/index.dwt" codeOutsideHTMLIsLocked="false" -->
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LYBERTY-ELECTRONICS</title>
+    <link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css">
+    <script src="../../../jquery/jquery-3.2.1.js"></script>
+    <script src="../../../bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../../bootstrap/fonts/font-awesome.css">
+    <link rel="stylesheet" href="../../../bootstrap/fonts/font-awesome.min.css">
+    <link rel="stylesheet " href="../../../css/1home.css">
+    <link rel="stylesheet " href="../../../css/product.css">
+    <link rel="shortcut icon" href="../../../img/icon.png" type="image/x-icon">
+    <link rel="icon" href="../../../img/icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../../../css/slide_product.css">
+
+</head>
+
+
+<body>
+
+
+    <bodyproduct>
+        <div class="container" class="product">
+
+
+            <div class="row" style="margin-top: 25px;">
+                <div class="col-sm-5">
+                    <div>
+                        <!--slide-->
+                        <div class="ep_slideshow-container">
+                            <div class="ep_mySlides ep_fade">
+
+                                <img src="../../../img/phone_samsung/Samsung Galaxy J7+_1.jpg" width="100%">
+                            </div>
+
+                            <div class="ep_mySlides ep_fade">
+                                <img src="../../../img/phone_samsung/Samsung Galaxy J7+_2.jpg" width="100%">
+                            </div>
+
+                            <div class="ep_mySlides ep_fade">
+                                <img src="../../../img/phone_samsung/Samsung Galaxy J7+_3.jpg" width="100%">
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="galary">
+                        <a class="ep_dot" onclick="currentSlide(1)">
+                            <img src="../../../img/phone_samsung/Samsung Galaxy J7+_1.jpg" alt="1.jpg" width="100%">
+                        </a>
+                        <a class="ep_dot" onclick="currentSlide(2)">
+                            <img src="../../../img/phone_samsung/Samsung Galaxy J7+_2.jpg" alt="2.jpg" width="100%">
+                        </a>
+                        <a class="ep_dot" onclick="currentSlide(3)">
+                            <img src="../../../img/phone_samsung/Samsung Galaxy J7+_3.jpg" alt="3.jpg" width="100%">
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+            <div>
+                <table class="table">
+
+                    <tr class="sp">
+                        <th>Name</th>
+                    </tr>
+                    <tr class="Price">
+                        <th>Price</th>
+                    </tr>
+                    <tr class="Screen">
+                        <th>Display</th>
+                    </tr>
+                    <tr class="Dimensions">
+                        <th>Dimensions</th>
+                    </tr>
+                    <tr class="Operating_System">
+
+                        <th>OS</th>
+                    </tr>
+
+                    <tr class="Camera">
+                        <th>Camera </th>
+                    </tr>
+               
+                    <tr class="Resolutions">
+                        <th>Resolutions</th>
+                    </tr>
+                    <tr class="CPU">
+                        <th>CPU</th>
+                    </tr>
+                    <tr class="Ram">
+                        <th>Ram</th>
+                    </tr>
+                    <tr class="Internal_Memory">
+                        <th>Memory</th>
+                    </tr>
+                    <tr class="SIM">
+                        <th>SIM Card</th>
+                    </tr>
+                    <tr class="WiFi">
+                        <th>WiFi</th>
+                    </tr>
+                    <tr class="Audio_and_Video">
+                        <th>Audio and Video</th>
+                    </tr>
+           
+                    <tr class="Headphones_Jack">
+                        <th>Headphones Jack</th>
+                    </tr>
+                    <tr class="PIN">
+                        <th>Battery</th>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+
+    </bodyproduct>
+
+
+
+</body>
+
+</html>
+
+
+
+<script src="../../../js/slide_product.js"></script>
+
+<script src="../../../js/phone_data.js"></script>
+
+<script>
+    //crip menu tang
+    $(document).ready(function () {
+        $(".menu li ").hover(function () {
+            $(this).find("ul:first ").slideDown(500);
+
+        }, function () {
+            $(this).find("ul:first ").hide();
+        });
+    });
+    //crip khoa menu
+    $(document).ready(function () {
+        $('.nav').affix({
+            offset: {
+                top: 205
+            }
+        });
+    });
+    //scrip mui ten ve dau web
+    $().ready(function () {
+        $(window).scroll(function () {
+            var top = $(this).scrollTop();
+            if (top > 100) {
+                $("#top").fadeIn('slow');
+            } else {
+                $("#top").fadeOut('slow');
+            }
+        });
+        $("#top").click(function () {
+            $("body").animate({
+                scrollTop: 0
+            }, 1000);
+        });
+    });
+
+    $('#carousel-id').carousel({
+        interval: 1000 * 2
+    });
+    //scrip loadjson
+    $(document).ready(function () {
+        $.each(Samsung_Galaxy_j7, function (i, e) {
+            $(".sp").append("<th>" + e.sp + "</th>");
+            $(".Price").append("<td>" + e.Price + "</td>");
+            $(".Screen").append("<td>" + e.Screen + "</td>");
+            $(".Operating_System").append("<td>" + e.Operating_System + "</td>");
+            $(".Camera").append("<td>" + e.Camera + "</td>");
+            $(".CPU").append("<td>" + e.CPU + "</td>");
+            $(".Ram").append("<td>" + e.Ram + "</td>");
+            $(".Internal_Memory ").append("<td>" + e.Internal_Memory + "</td>");
+            $(".PIN").append("<td>" + e.PIN + "</td>");
+            $(".Dimensions").append("<td>" + e.Dimensions + "</td>");
+            $(".Resolutions").append("<td>" + e.Resolutions + "</td>");
+            $(".SIM").append("<td>" + e.SIM + "</td>");
+            $(".WiFi").append("<td>" + e.WiFi + "</td>");
+            $(".Audio_and_Video").append("<td>" + e.Audio_and_Video + "</td>");
+            $(".Headphones_Jack").append("<td>" + e.Headphones_Jack + "</td>");
+           
+        });
+    });
+</script>

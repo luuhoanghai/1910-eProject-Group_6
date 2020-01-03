@@ -1,0 +1,113 @@
+    /*css check box*/
+    /*==========================================*/
+    
+    #name {
+        height: 3.7em;
+    }
+    
+    .imsp {
+        min-height: 165px;
+        max-height: 100%;
+        min-width: 126px;
+        max-width: 100%;
+    }
+    
+    .menu_compare {
+        position: fixed;
+        left: 2em;
+        bottom: 7em;
+    }
+    
+    #note {
+        margin-top: 2em;
+        margin-left: 6.5em;
+        border: 1px solid gray;
+        display: inline-block;
+        right: 10.5em;
+        background: azure;
+        width: 1040;
+        padding-left: 30em;
+        border-radius: 20px 20px 20px 20px;
+    }
+    
+    #note p {
+        font-weight: bold;
+    }
+    
+    #product1 .row .col-sm-2 {
+        border: 1px solid gray;
+        box-shadow: 3px 3px;
+        min-height: 260px;
+        max-height: 260px;
+    }
+    
+    #product1 .row {
+        margin-left: 3em;
+        margin-bottom: 3em;
+        margin-top: 3em;
+    }
+    
+    .rowImage {
+        min-height: 10em;
+        max-height: 10em;
+    }
+    
+    .row #product1 {
+        display: block;
+    }
+    
+    .hinhsp {
+        min-height: 10em;
+        max-height: 10em;
+        padding-bottom: 1em;
+        margin-bottom: 1em;
+        display: block;
+        padding-left: 10%;
+    }
+    
+    .border {
+        border-bottom: 1px solid gray;
+        display: block;
+    }
+    
+    #product {
+        display: block;
+        margin-top: 0.8em;
+        margin-bottom: 2em;
+    }
+    /*==========================================*/
+    
+    @-webkit-keyframes fade_0 {
+        0% {
+            opacity: 0
+        }
+        10% {
+            opacity: 0
+        }
+        100% {
+            opacity: 1
+        }
+    }
+    
+    @keyframes fade_0 {
+        0% {
+            opacity: 0
+        }
+        10% {
+            opacity: 0
+        }
+        100% {
+            opacity: 1
+        }
+    }
+    
+    @media (min-width: 769px) {
+        .ep_fade_0 {
+            -webkit-animation-name: fade_0;
+            /* Safari 4.0 - 8.0 */
+            -webkit-animation-duration: 2s;
+            /* Safari 4.0 - 8.0 */
+            animation-name: fade_0;
+            animation-duration: 2s;
+        }
+    }

@@ -1,0 +1,142 @@
+/*==================all page==================*/
+* {
+  box-sizing: border-box
+}
+
+  
+
+.ep_mySlides {
+  display: none;
+  text-align: center;
+}
+
+.ep_slideshow-container img{
+  text-align: center;
+}
+
+.container{
+  width: 70%;
+}
+/* Slideshow container */
+
+.ep_slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  width: 100%;
+}
+
+/* slideshow control */
+.galary{
+  text-align: center;
+}
+
+
+/* Next & previous buttons */
+
+.ep_prev,
+.ep_next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+
+.ep_next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.ep_prev:hover,
+.ep_next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text */
+
+.ep_numbertext {
+  color: #413e3e;  
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+.ep_dot {
+  cursor: pointer;
+  width: 20%;
+  margin: 0 2px;
+  background-color: #bbb;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-top: 10px;
+}
+
+.ep_active,
+.ep_dot:hover {
+  border:solid 1px black;
+}
+
+/* Fading animation */
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+.ep_fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/*button see more*/
+.ep_btn{
+  border: none;
+  background-color: white;
+  color: rgb(33, 33, 33);
+  font-weight: bold;
+ }
+
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+  .ep_prev,
+  .ep_next,
+  .ep_text {
+    font-size: 11px
+  }
+}
+/* hide galary */
+@media (max-width: 768px) {
+  .galary {
+      display: none;
+  }
+}

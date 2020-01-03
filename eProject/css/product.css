@@ -1,0 +1,122 @@
+.overlay-wrapper {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.overlay-wrapper.overlay-wrapper-bordered {
+    border-bottom: 5px solid transparent;
+}
+
+.overlay-wrapper.overlay-wrapper-bordered:hover {
+    border-bottom: 5px solid cornflowerblue;
+}
+
+.btn-more:hover {
+    background: rgb(179, 71, 71);
+    color: #ffffff !important;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.btn-more i,
+.btn-more [class*=" icon-"] {
+    background: cornflowerblue;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 200;
+    border-radius: 2px 0 0 2px;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    line-height: 20px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-right: 8px;
+    font-size: 10px;
+    position: relative;
+}
+
+.btn-more i.default:before,
+.btn-more [class*=" icon-"].default:before {
+    content: "\f067";
+    font-family: 'FontAwesome';
+}
+
+.overlay-wrapper .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: block;
+    top: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    -webkit-transition: all 220ms ease-out;
+    -moz-transition: all 220ms ease-out;
+    -o-transition: all 220ms ease-out;
+    transition: all 220ms ease-out;
+    text-align: center;
+    color: white;
+}
+
+.overlay-wrapper .overlay.on {
+    top: 0;
+}
+
+.overlay-wrapper .overlay .overlay-content {
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.overlay-wrapper .underlay {
+    z-index: 99;
+}
+
+.overlay-wrapper:hover .overlay {
+    top: 0px;
+}
+
+.btn-more {
+    font-size: 20px;
+    margin-left: 2.9em;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.item .sp {}
+
+.name_com {
+    border-bottom: 7px solid gray;
+    margin-left: 8em;
+    margin-right: 8em;
+}
+
+div.name_com h2 {
+    background: white;
+    text-align: center;
+    position: relative;
+    top: 27px;
+    display: inline-block;
+    padding-left: 13px;
+    left: 235px;
+    padding-right: 13px;
+}
+
+.owl-theme {
+    margin-top: 5em;
+}
+
+.overlay-wrapper:hover .overlay table {
+    padding-bottom: 30px;
+}
+
+tr {
+    border-bottom: 1px solid white;
+    margin-bottom: 3px;
+}

@@ -1,0 +1,70 @@
+.name_com {
+    border-bottom: 7px solid gray;
+    margin-left: 8em;
+    margin-right: 8em;
+}
+
+div.name_com h2 {
+    background: white;
+    text-align: center;
+    position: relative;
+    top: 27px;
+    display: inline-block;
+    padding-left: 13px;
+    left: 235px;
+    padding-right: 13px;
+}
+
+.container {
+    margin-top: 1em;
+}
+
+.container_product {
+    position: relative;
+    margin-bottom: 5em;
+    margin-top: 3em;
+}
+
+.img-responsive {
+    opacity: 1;
+    display: inline-block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    max-height: 305px;
+    display: block;
+}
+
+.col-sm-3:hover .img-responsive {
+    opacity: 0;
+}
+
+.col-sm-3:hover .middle {
+    opacity: 1;
+}
+
+td li:before {
+    content: '✔';
+    margin-left: -1em;
+    margin-right: .100em;
+}
+
+td ul {
+    list-style: none;
+}
+
+.middle table {
+    max-height: 210px;
+    width: 100%;
+    text-align: justify;
+    display: inline-table;
+}

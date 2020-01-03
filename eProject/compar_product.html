@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- InstanceBegin template="/Templates/index.dwt" codeOutsideHTMLIsLocked="false" -->
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>-COMPARE-LYBERTY-ELECTRONICS</title>
+
+
+
+
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/fonts/font-awesome.css">
+    <link rel="stylesheet" href="bootstrap/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="css/1home.css">
+    <link rel="stylesheet" href="css/compare.css">
+
+
+    <script src="angular/angular.min.js"></script>
+    <script src="jquery/jquery-3.2.1.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+</head>
+
+
+
+
+
+<body>
+
+   <!--Header-->
+   <div class="container-fluid">
+    <div class="row" style="background-color:#3c3d41">
+        <div class="col-sm-3">
+            <a href="home.html">
+                <img src="img/logo.png" width="250px" height="250px" style="position: relative; top: 60px;">
+            </a>
+        </div>
+        <div class="col-sm-5">
+            <img src="img/newyear.png" id="namecompany" width="50%" height="20%" style="position: relative; top: 50px;"></img>
+            
+        </div>
+        <div class="col-sm-2">
+            <img src="img/phao.png" id="namecompany" width="100%" height="20%" style="position: relative;right: 20px;"></img>
+        </div>
+        <div class="col-sm-2">
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Menu-->
+    <div class="row">
+        <div class="col-ms-12">
+            <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="197">
+                <ul id="tieude" class="menu">
+                    <li><a href="home.html" class="fa fa-home"> home</a></li>
+                    <li><a href="phone.html" class="glyphicon glyphicon-phone"> Phone<b class="caret"></b></a>
+                        <ul class="dropdown-menu-right">
+                            <li><a href="phone_apple.html"> apple</a> </li>
+                            <li><a href="phone_samsung.html"> samsung</a> </li>
+                            <li><a href="phone_sony.html">sony</a> </li>
+                        </ul>
+                    </li>
+                    <li><a href="tablet.html" class="fa fa-tablet">     Tablet<b class="caret"></b></a>
+                        <ul class="dropdown-menu-right">
+                            <li><a href="tablet_asus.html"> asus</a> </li>
+                            <li><a href="tablet_apple.html"> apple</a> </li>
+                            <li><a href="tablet_samsung.html"> samsung</a> </li>
+                        </ul>
+                    </li>
+                    <li><a href="laptop.html" class="fa fa-laptop"> Laptop<b class="caret"></b></a>
+                        <ul class="dropdown-menu-right">
+                            <li><a href="laptop_dell.html"> dell</a> </li>
+                            <li><a href="laptop_apple.html"> apple</a> </li>
+                            <li><a href="laptop_lenovo.html"> lenovo</a> </li>
+                        </ul>
+                    </li>
+                    <li><a href="television.html" class="fa fa-television"> Television<b class="caret"></b></a>
+                        <ul class="dropdown-menu-right">
+                            <li><a href="television_lg.html">lg</a> </li>
+                            <li><a href="television_sony.html">sony</a> </li>
+                            <li><a href="television_panasonic.html">panasonic</a> </li>
+                        </ul>
+                    </li>
+                    <li><a href="compar_product.html" class="fa fa-balance-scale"> product compare</a></li>
+                    <li><a href="Contact_us.html" class="fa fa-inbox"> Contact us</a></li>
+                </ul>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    
+
+
+
+
+
+
+
+
+
+    <!--Khu vuc viet cac phan can thiet -->
+
+
+
+    <div class="container" id="note">
+        <a name="note"></a>
+        <h2>
+            To compare products
+        </h2>
+        <p>1. Please select from 2 to 4 products</p>
+        <p>2. Click on the symbol <img src="img/compare.png" width="50" height="50"> to make the comparison</p>
+        <p>**** Symbol <img src="img/reset.png" width="50" height="50" id="reset"> used to reset the product comparison</p>
+
+    </div>
+
+    <div class="container" id="section_product">
+        <hr>
+        <button class="btn btn-primary" id="phone">Phone</button>
+        <button class="btn btn-primary" id="laptop">Laptop</button>
+        <button class="btn btn-primary" id="tablet">Tablet</button>
+        <button class="btn btn-primary" id="tv">Television</button>
+        <h4 id="event"></h4>
+
+        <hr>
+
+    </div>
+
+
+
+    <div class="menu_compare" id="cc">
+        <a data-toggle="tooltip" title="Compare Product"> <img src="img/compare.png" width="50" height="50" id="compare"></img>
+        </a>
+        <br><br>
+        <a data-toggle="tooltip" title="Reset Compare"> <img src="img/reset.png" width="50" height="50" id="refest"></img>
+        </a>
+    </div>
+    <div class="container" id="product1">
+        <div class="row">
+            <div class="col-sm-12 " id="showRoom">
+                <!--show product here-->
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" id="comparesion">
+        <div class="row" id="main">
+            <div class="col-xs-2" id="information">
+
+                <!--append information to compare-->
+            </div>
+            <div class="col-xs-10" id="product">
+                <!--append Manufacturer-->
+
+
+                <div class="row">
+                    <div class="col-xs-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Dieuhuong-->
+    <div>
+        <a id="top" href="#"><img src="img/Top.png" width="60px" height="60px"></a>
+    </div>
+    <!--End-->
+
+
+
+    <!--Footer-->
+
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <a href="home.html">
+                    <img id="endlogo" src="img/logo.png" width="200px" height="200px" style="position: relative;bottom: 50px;">
+                    </a>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="#about">Company Information</a></li>
+                        <li><a href="Contact_us.html">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Support</h5>
+                        <ul class="header-links pull-left">
+                            <li><a href="#"><i class="fa fa-phone" style="color: orange;"></i> +021-47-25-99</a></li>
+                            <li><a href="#"><i class="fa fa-envelope-o" style="color: orange;"></i> libertyelectronics@email.com</a></li>
+                            <li><a href="#"><i class="fa fa-map-marker" style="color: orange;"></i> 590, Cach Mang Thang Tam, 11 Ward, 3 District, Ho
+                                    Chi Minh city</a></li>
+                        </ul>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2019 Copyright Group 6</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    //crip menu tang
+    $(document).ready(function() {
+        $(".menu li ").hover(function() {
+            $(this).find("ul:first ").slideDown(500);
+        }, function() {
+            $(this).find("ul:first ").hide();
+        });
+    });
+
+
+    //scrip mui ten ve dau web
+    $().ready(function() {
+        $(window).scroll(function() {
+            var top = $(this).scrollTop();
+            if (top > 100) {
+                $("#top").fadeIn('slow');
+            } else {
+                $("#top").fadeOut('slow');
+            }
+        });
+        $("#top").click(function() {
+            $("html,body").animate({
+                scrollTop: 0
+            }, 1000);
+        });
+    });
+
+
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            var cc = $(this).scrollTop();
+            if (cc > 200) {
+                $("#cc").fadeIn();
+            } else {
+                $("#cc").fadeOut();
+            }
+        });
+    });
+
+
+
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+
+<!--srcip comapare-->
+<!--du lieu san pham -->
+<script src="json/product_list.js"></script>
+<!--end-->
+<script>
+    // append product 
+
+
+    function myAppend() {
+        var i;
+
+        for (i = 0; i < ds.length; ++i) {
+            $("#showRoom").append(
+                '<div class="col-sm-2 image ' + ds[i].brand + '" style = "margin-right: 2em; margin-bottom:2em;">' +
+                '<img src="' + ds[i].img + '" class="img-responsive imsp "  alt="Image">' +
+                '<br><input type="checkbox" height:2em class="btn btn-info" name = "product" value = "' + ds[i].id + '"><b> Add compare</b>' +
+                '</input>' +
+                '<p style="text-align:center;">' + ds[i].name + '</p>' +
+                '</div>'
+            )
+        }
+
+    };
+    // compare product
+
+    function myCompare() {
+        var dem = 0;
+
+        var product = document.getElementsByName("product");
+        var mark = new Array();
+        for (var i = 0; i < product.length; ++i) {
+            if (product[i].checked == true) {
+                mark.push(product[i].value);
+                dem++;
+                document.getElementById("event").innerHTML = "The number of products you are comparing is: " + dem + " products";
+            }
+        }
+
+        if (mark.length < 2 || mark.length > 4) {
+            alert("Please select 2 to 4 products to compare");
+            $(".image").hide();
+            $(".phone").show();
+            $("#showRoom").fadeIn(1000);
+        } else {
+            var arr = new Array();
+            for (var i = 0; i < mark.length; ++i) {
+                for (var j = 0; j < ds.length; ++j) {
+                    if (ds[j].id == mark[i]) {
+                        arr.push(ds[j]);
+                        break;
+                    }
+                }
+            }
+            $("#information").append(
+                '<div class="row border">' +
+                '<p class="rowImage" style="padding-top:3em;"><b>Image</b></p>' +
+                '</div>' +
+
+
+                '<div class="row border" id="name">' +
+                '<p><b>Name</b></p>' +
+                '</div>' +
+
+
+                '<div class="row border">' +
+                '<p><b>Price</b></p>' +
+                '</div>' +
+
+
+                '<div class="row border" id="display">' +
+                '<p><b>Display</b></p>' +
+                '</div>' +
+
+
+                '<div class="row border">' +
+                '<p><b>Dimensions</b></p>' +
+                '</div>' +
+
+                '<div class="row border">' +
+                '<p><b>OS</b></p>' +
+                '</div>' +
+
+
+                '<div class="row border">' +
+                '<p><b>Camera</b></p>' +
+                '</div>' +
+
+
+                '<div class="row border">' +
+                '<p><b>Videocall</b></p>' +
+                '</div>' +
+
+
+                '<div class="row border">' +
+                '<p><b>Video Recording</b></p>' +
+                '</div>' +
+
+
+                '<div class="row border">' +
+                '<p><b>CPU</b></p>' +
+                '</div>' +
+
+                '<div class="row border">' +
+                '<p><b>RAM</b></p>' +
+                '</div>' +
+
+
+                '<div class="row border">' +
+                '<p><b>Memmory</b></p>' +
+                '</div>' +
+
+
+                '<div class="row border">' +
+                '<p><b>Sim Card</b></p>' +
+                '</div>' +
+
+                '<div class="row border"id="wifi">' +
+                '<p><b>Wifi</b></p>' +
+                '</div>' +
+
+                '<div class="row border" id="audio">' +
+                '<p><b>Audio and Video</b></p>' +
+                '</div>' +
+
+
+                '<div class="row border"id="access">' +
+                '<p><b>Accessibility</b></p>' +
+                '</div>' +
+
+
+                '<div class="row border"id="head">' +
+                '<p><b>Headphones Jack</b></p>' +
+                '</div>' +
+
+                '<div class="row border">' +
+                '<p><b>Battery</b></p>' +
+                '</div>' +
+                '</div>'
+
+
+
+            );
+            var n = Math.floor(12 / mark.length);
+
+
+
+            for (var i = 0; i < mark.length; ++i) {
+                $("#product").append(
+                    '<div class="col-xs-' + n + '" style=" border-right: 1px solid gray;text-align: center;   padding-right: 2em;" >' +
+                    '<div class="row border rowImage">' +
+                    '<img class="hinhsp"src="' + arr[i].img + '" alt="img" style="text-align: center;" >' +
+                    '</div>' +
+                    '<div class="row border name">' +
+                    '<p>' + arr[i].name + '</p>' +
+                    '</div>' +
+                    '<div class="row border">' +
+                    '<p>' + arr[i].price + '</p>' +
+                    '</div>' +
+                    '<div class="row border display">' +
+                    '<p>' + arr[i].display + '</p>' +
+                    '</div>' +
+                    '<div class="row border">' +
+                    '<p>' + arr[i].dimensions + '</p>' +
+                    '</div>' +
+                    '<div class="row border">' +
+                    '<p>' + arr[i].os + '</p>' +
+                    '</div>' +
+                    '<div class="row border">' +
+                    '<p>' + arr[i].camera + '</p>' +
+                    '</div>' +
+                    '<div class="row border">' +
+                    '<p>' + arr[i].videocall + '</p>' +
+                    '</div>' +
+                    '<div class="row border">' +
+                    '<p>' + arr[i].video_recording + '</p>' +
+                    '</div>' +
+                    '<div class="row border">' +
+                    '<p>' + arr[i].cpu + '</p>' +
+                    '</div>' +
+                    '<div class="row border">' +
+                    '<p>' + arr[i].ram + '</p>' +
+                    '</div>' +
+                    '<div class="row border">' +
+                    '<p>' + arr[i].memory + '</p>' +
+                    '</div>' +
+                    '<div class="row border">' +
+                    '<p>' + arr[i].sim_card + '</p>' +
+                    '</div>' +
+                    '<div class="row border wifi">' +
+                    '<p>' + arr[i].wifi + '</p>' +
+                    '</div>' +
+                    '<div class="row border audio">' +
+                    '<p>' + arr[i].audio_and_video + '</p>' +
+                    '</div>' +
+                    '<div class="row border access">' +
+                    '<p>' + arr[i].accessibility + '</p>' +
+                    '</div>' +
+                    '<div class="row border">' +
+                    '<p>' + arr[i].headphones_jack + '</p>' +
+                    '</div>' +
+
+                    '<div class="row border">' +
+                    '<p>' + arr[i].battery + '</p>' +
+                    '</div>' +
+                    '</div>'
+                );
+            }
+            switch (mark.length) {
+                case 2:
+                    document.getElementById("access").style.height = "3.7em"; //2 dong
+                    $(".name").css("height", "3.7em");
+
+                case 3:
+                    document.getElementById("wifi").style.height = "3.7em";
+                    document.getElementById("audio").style.height = "3.7em";
+                    document.getElementById("access").style.height = "4.9em";
+
+
+                    $(".wifi").css("height", "3.7em");
+                    $(".audio").css("height", "3.7em");
+                    $(".access").css("height", "4.9em");
+                    $(".name").css("height", "3.7em");
+                    break;
+                case 4:
+                    document.getElementById("display").style.height = "3.7em"; //2 dong
+                    document.getElementById("wifi").style.height = "3.7em";
+                    document.getElementById("audio").style.height = "4.9em"; //3 dong
+                    document.getElementById("access").style.height = "8em"; // 4 dong
+
+
+                    $(".display").css("height", "3.7em");
+                    $(".wifi").css("height", "3.7em");
+                    $(".audio").css("height", "4.9em");
+                    $(".access").css("height", "8em");
+                    $(".name").css("height", "3.7em");
+
+                    break;
+
+            }
+        }
+
+
+    };
+    //reset product checkbox
+
+    //script css
+
+
+
+
+
+
+    function myReset() {
+        var product = document.getElementsByName("product");
+        for (var i = 0; i < product.length; ++i) {
+            product[i].checked = false;
+        }
+    }
+    $(function() {
+        /* append product */
+        myAppend();
+        /************************************/
+        /*display*/
+        $('#phone').click(function() {
+            $("#information, #product").hide(function() {
+                $(".image").hide();
+                $(".phone").show();
+                $("#showRoom").fadeIn(1000);
+            })
+        })
+        $('#laptop').click(function() {
+            $("#information, #product").hide(function() {
+                $(".image").hide();
+                $(".laptop").show();
+                $("#showRoom").fadeIn(1000);
+            })
+        })
+        $('#tablet').click(function() {
+            $("#information, #product").hide(function() {
+                $(".image").hide();
+                $(".tablet").show();
+                $("#showRoom").fadeIn(1000);
+            })
+        })
+        $('#tv').click(function() {
+            $("#information, #product").hide(function() {
+                $(".image").hide();
+                $(".tv").show();
+                $("#showRoom").fadeIn(1000);
+            })
+        })
+    })
+
+    /**************************************/
+    /* compare */
+    $("#compare").click(function() {
+            $("#information, #product").empty();
+            $("#showRoom").hide(function() {
+                myCompare();
+                $("#information, #product").fadeIn(1000);
+            });
+
+        })
+        /**************************************/
+        /* Reset */
+    $("#refest").click(function() {
+
+        $("#product").empty();
+        $("#information").empty();
+        $(".phone").show();
+        $("#showRoom").fadeIn(1000);
+        $("#event").empty();
+        myReset();
+    })
+    $("#showRoom").hide(function() {
+        $(".image").hide();
+        $(".phone").show();
+        $("#showRoom").fadeIn(1000);
+    })
+
+
+    /**************************************/
+</script>
