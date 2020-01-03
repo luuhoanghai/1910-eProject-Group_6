@@ -15,7 +15,7 @@ Project title: Liberty Electronics - Your Electronics World
          Luu Hoang Hai (luuhoaghai@gmail.com)  Student1233867
 ============================
 
-github report link:
+github report link: https://github.com/luuhoanghai/1910-eProject-Group_6/tree/master/Document
 
 ============================
 
