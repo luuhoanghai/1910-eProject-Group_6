@@ -20,7 +20,7 @@ github report link:
 
 ============================
 
-eProject published at:      https://luuhoanghai.github.io/1910-eProject-Group_6/eProject/home.html
+eProject published at      https://luuhoanghai.github.io/1910-eProject-Group_6/eProject/home.html
 
 ============================
 
