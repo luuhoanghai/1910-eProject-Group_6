@@ -22,7 +22,7 @@ github report link:
 
 ============================
 
-eProject published at: 
+eProject published at: https://luuhoanghai.github.io/1910-eProject-Group_6/
 
 ============================
 
